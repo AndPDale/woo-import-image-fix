@@ -122,13 +122,17 @@ class WooImportImgFix
         echo "<h2>Fix Duplicate Imported Images</h2>";
 
         echo "<p>";
-        echo "This page will find duplicate images that are used against products in the product galleries, featured image or variations.";
+        echo "This page will find duplicate images that are used against products in the product galleries, featured image or variations. </p>";
+        echo "<p>";
         echo "The duplicates can then be taken off the products and replaced by the first (earliest) image in each duplicate set.";
         echo "</p>";
 
+		echo "<h3>";
+		echo "Preparation";
+		echo "</h3>";       
         echo "<p>";
-        echo 'Preparation (run this first to find new images): <a href="' . admin_url('admin.php?page=' . $this->page_slug . '&action=scan_sigatures') . '">Scan and record image signatures</a>';
-        echo "</p>";
+        echo '<div id="wooimportingfix_button">';
+        echo 'Run the following step first to find new images: <a href="' . admin_url('admin.php?page=' . $this->page_slug . '&action=scan_sigatures') . '">Scan and record image signatures</a> </div>';
 
         echo "<form action='" . admin_url('admin.php') . "' method='get'>";
 
