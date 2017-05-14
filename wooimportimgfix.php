@@ -126,10 +126,7 @@ class WooImportImgFix
         echo "<p>";
         echo "The duplicates can then be taken off the products and replaced by the first (earliest) image in each duplicate set.";
         echo "</p>";
-
-		echo "<h3>";
-		echo "Preparation";
-		echo "</h3>";       
+	echo "<h3> Preparation </h3>";       
         echo "<p>";
         echo '<div id="wooimportingfix_button">';
         echo 'Run the following step first to find new images: <a href="' . admin_url('admin.php?page=' . $this->page_slug . '&action=scan_sigatures') . '">Scan and record image signatures</a> </div>';
